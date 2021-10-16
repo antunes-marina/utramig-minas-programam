@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Aumento Salarial</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <script language="javascript">
+        
+        var salarioinicial = 1000;
+        var aumento = 0.015;
+
+        var anoinicial = 2015;
+        var anoinput = prompt("Digite o ano para saber o valor do salário: ");
+
+        var salarioatual = (((2**(parseInt(anoinput - anoinicial - 1)))*aumento)*salarioinicial)+salarioinicial;
+
+        document.write("<br>")
+        document.write("O salário do ano " + anoinput + " é: R$ " + salarioatual + ".");
+
+
+    </script>
+
+</body>
+
+</html>

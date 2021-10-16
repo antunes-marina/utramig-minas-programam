@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>	Cálculo Desconto </title>
+		<meta charset = "utf-8">
+	</head>
+
+<body>
+
+	<script type = "text/javascript">
+
+		alert("Vamos calcular seu desconto");
+		var valor = prompt("Digite o valor do produto: ");
+		
+		var desc20 = (20*valor)/100
+		var desc10 = (10*valor)/100
+	
+		if (valor > 100)
+		{
+			valor = valor - desc20;
+			document.write("Total a pagar: " + valor);
+		}
+		
+		else
+		{
+			valor = valor - desc10;
+			document.write("Total a pagar: " + valor);
+		}
+
+	</script>
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title> Estado Civil </title>
+		<meta charset = "utf-8">
+	</head>
+
+<body>
+
+	<script type = "text/javascript">
+		
+		var contcasado = 0;
+		var contsolteiro = 0;	
+
+		cont = 0;
+
+		while (cont < 5)
+		{
+			var estcivil = prompt("Qual seu estado civil? Digite C (Casado) ou S (Solteiro): ");
+
+			if ((estcivil == "c") || (estcivil == "C"))
+			{
+				contcasado ++;
+				cont ++;	
+			}
+
+			else if ((estcivil == "s") || (estcivil == "S"))
+			{
+				contsolteiro ++;
+				cont ++;
+			}
+
+			else
+			{
+				document.write("Valor inválido. Digite S ou C apenas!");
+			}
+		}
+		
+		document.write("O número de pessoas casadas é: " + contcasado + ".");
+		document.write("<br>");
+		document.write("O número de pessoas solteiras é: " + contsolteiro + ".");
+
+
+	</script>		
+
+</body>
+
+</html>

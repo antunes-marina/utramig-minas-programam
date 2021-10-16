@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> Média das notas </title>
+		<meta charset = "utf-8">
+	</head>
+<body>
+	
+	<script type="text/javascript">
+
+	alert("Vamos calcular a média de duas notas do aluno!");
+	var a = parseFloat(prompt('Digite a primeira nota: '));
+	var b = parseFloat(prompt('Digite a segunda nota: '));
+	
+	var resultado = (a + b)/2;
+
+	if (resultado >= 7)
+	{
+		if (resultado < 10)
+			document.write("Aluno aprovado!");
+
+		else
+			document.write("Aluno aprovado com Distinção!");
+	}
+	else
+	{
+		document.write("Aluno reprovado!");
+	}
+
+	</script>
+	
+</body>
+</html>

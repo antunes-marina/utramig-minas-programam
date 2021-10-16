@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Java Script - Array-funcões - indexof </title>
+	</head>
+<body>
+
+	<script>
+	   var vetor1 = new Array(1, 2, 3, 4, 5);
+	   var procura = eval(prompt("digite o numero a ser procurado"));
+	   
+	   var indice = vetor1.indexOf(procura);
+	   
+	   document.write("Valor informado para pesquisa: "+ procura);
+	   
+	   document.write('<br>');
+	   	   
+	   if (indice == -1)
+	   {
+		    document.write('Não encontrei o número informado');
+	   }
+       else 
+	   {
+		    document.write('encontrei o número informado');
+	   }
+	   
+	   document.write(indice);
+	   
+	   document.write('<br>');
+	   
+	   
+	   // var frutas = new Array("banana", "maça", "Goiaba");
+	   // var indicef = frutas.indexOf("maça");
+	   
+	   // if (indicef == -1)
+	   // {
+		    //document.write('Não encontrei a fruta informata');
+	   //}
+       //else 
+	   //{
+		    //document.write('encontrei a fruta informada');
+	   //}
+	   
+	   
+	   //document.write(indicef);
+	   
+	   
+	</script>
+	
+</body>
+</html>
