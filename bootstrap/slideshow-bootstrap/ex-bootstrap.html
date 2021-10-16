@@ -1,0 +1,108 @@
+<html lang="pt-br">
+
+<head>
+
+<!–- meta tags obrigatorias -–>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Exemplo Bootstrap  </title>
+
+<!– CSS do Bootstrap –>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+-->
+
+    <!-- javascript validacao -- inicio -->
+	
+    <script language="javascript"type="text/javascript">   
+			function validar()
+			{
+			   var nome = form1.nome.value;
+			   var email = form1.email.value;
+			
+			   
+			   if(nome == "")
+			   {
+			     /*alert('Preencha o campo com seu nome');*/
+				 
+				
+				 
+				/* 
+				 document.write('<div class="panel panel-danger ">');
+				 document.write('<div class="panel-heading">Cabeçalho</div>');
+				 document.write('		<div class="panel-body">');
+				 document.write('			Conteúdo');
+				 document.write('		</div>	');
+				 document.write('</div>');
+                 */
+				 
+				 returnfalse;
+			   }
+			   
+			   if (email == "")
+			   {
+			      /*alert('Preencha o campo e-mail');*/
+				  
+				  document.write('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">');
+				  
+				  document.write('<p class="text-warning"> Este texto aparecerácomou mamensagem de sucesso, em verde</p>');
+				  returnfalse;
+			   }
+			   			   			  			   
+			}
+   </script>
+   
+   <!-- javascript validacao -- fim -->
+   
+</head>
+
+<body>
+
+
+<br>
+<br>
+
+
+<!-Primeiro o jQuery, depois o Popper.js, e depois o Bootstrap JS –>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.js"></script>
+
+
+<div class="container">
+   <br>
+   <br>
+   
+	<div class="form-group has-success" > 
+	   <form name="form1">
+	   
+			<label class="control-label" for="sucesso">Digite seu nome</label> 
+			<input  name="nome" type="text" class="form-control" id="sucesso"> 
+		
+			<label class="control-label" for="alerta">Digite seu e-mail</label> 
+			<input  name="email" type="text" class="form-control" id="alerta"> 
+			<br>
+			<br>
+			<!-- botão de acao --> 
+			<input type="submit"onclick="return validar()">
+
+	  </form>	
+		
+	</div> 
+	
+</div>
+		
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title> Nota Final </title>
+        <meta charset = "utf-8">
+    </head>
+
+    <body>
+        <script type = text/javascript>
+        
+        alert("Digite as notas do aluno: ");
+        notas = [];
+
+        for (i=0; i < 4; i++) {
+            notas[i]=parseFloat(prompt("Digite a nota: "));
+            if (i=="3") {
+                i++;
+                alert("Se o aluno ficou em prova final, digite a nota da prova. Caso contrário digite 0.");
+                notas[i] = parseFloat(prompt("Digite a nota: "));
+            } 
+
+        }
+        // printando as notas "na mão" (funcionou):
+        // document.write("Nota 1: " + notas[0]);
+        // document.write("<br>");
+        // document.write("Nota 2: " + notas[1]);
+        // document.write("<br>");
+        // document.write("Nota 3: " + notas[2]);
+        // document.write("<br>");
+        // document.write("Nota 4: " + notas[3]);
+        // document.write("<br>");
+
+        //printando as notas com for:
+        for (i=0; i<5; i++) {
+            document.write("Nota " + (i+1) + ": " + notas[i]);
+            document.write("<br>");
+        }
+
+        //fazendo a função para calcular nota final:
+        function notafinal(a, b, c, d, e) {
+            parseFloat(notas[0]);
+            parseFloat(notas[1]);
+            parseFloat(notas[2]);
+            parseFloat(notas[3]);
+            parseFloat(notas[4]);
+            if (e == 0) {
+                return (a+b+c+d)/4;
+            } else {
+                return (a+b+c+d+e)/5;
+            }     
+            
+        }
+
+        //para falar se ficou em prova final ou nao
+        for (i in notas) {
+            
+        }
+        if (notas[4]==0) {
+            document.write("Aluno não ficou em prova final.");
+            document.write("<br>");
+            document.write("Nota final: " + notafinal(notas[0],notas[1],notas[2],notas[3],notas[4]));
+        } else {
+            document.write("Aluno ficou em prova final.");
+            document.write("<br>");
+            document.write("Nota final: " + notafinal(notas[0],notas[1],notas[2],notas[3],notas[4]));
+        }
+
+        // vi na internet solução usando array.reduce / arrow funcionou:
+        // let soma = notas.reduce((t, n) => t + n, 0);
+
+        
+        //Esse teste não funcionou (parece que está considerando os valores da array como string):
+        // var soma = 0;
+        // var notafinal = 0;
+
+        // for (i=0; i < 5; i++) {
+        //     soma += notas[i];
+                        
+        //     /*if (notas[4] == "0") {
+        //         notafinal = soma / 4;
+        //     } else {
+        //         notafinal = soma / 5;
+        //     }*/
+        // }
+        //document.write(soma);
+        //document.write("A Nota Final do aluno é: " + notafinal + " .");
+
+
+        </script>
+
+    </body>
+</html>

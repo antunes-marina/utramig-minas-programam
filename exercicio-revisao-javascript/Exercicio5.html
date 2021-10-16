@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+            <title>Aumento Salarial</title>
+    </head>
+    
+    <body>
+        
+        <script language="JavaScript">
+
+            salario = parseFloat(prompt("Digite o salário do colaborador: "));
+
+            if (salario <= 280) {
+                aumento = (salario * 20 / 100);
+                salarioatualizado = aumento + salario;
+                document.write("<img src='logo.png'></img>");
+                document.write("<br>");
+                document.write("Salário antes do reajuste: R$ " + salario);
+                document.write("<br>");
+                document.write("Percentual de aumento aplicado: 20%");
+                document.write("<br>");
+                document.write("Valor do Aumento: R$ " + aumento);
+                document.write("<br>");
+                document.write("Novo salário, após o aumento: R$ " + salarioatualizado);
+            }
+
+            else if (salario > 280 && salario <= 700) {
+                aumento = (salario * 15 / 100);
+                salarioatualizado = aumento + salario;
+                document.write("<img src='logo.png'></img>");
+                document.write("<br>");
+                document.write("Salário antes do reajuste: R$ " + salario);
+                document.write("<br>");
+                document.write("Percentual de aumento aplicado: 15%");
+                document.write("<br>");
+                document.write("Valor do Aumento: R$ " + aumento);
+                document.write("<br>");
+                document.write("Novo salário, após o aumento: R$ " + salarioatualizado);
+            }
+
+
+            else if (salario > 700 && salario <= 1500) {
+                aumento = (salario * 10 / 100);
+                salarioatualizado = aumento + salario;
+                document.write("<img src='logo.png'></img>");
+                document.write("<br>");
+                document.write("Salário antes do reajuste: R$ " + salario);
+                document.write("<br>");
+                document.write("Percentual de aumento aplicado: 10%");
+                document.write("<br>");
+                document.write("Valor do Aumento: R$ " + aumento);
+                document.write("<br>");
+                document.write("Novo salário, após o aumento: R$ " + salarioatualizado);
+            }
+
+            else {
+                aumento = (salario * 5 / 100);
+                salarioatualizado = aumento + salario;
+                document.write("<img src='logo.png'></img>");
+                document.write("<br>");
+                document.write("Salário antes do reajuste: R$ " + salario);
+                document.write("<br>");
+                document.write("Percentual de aumento aplicado: 5%");
+                document.write("<br>");
+                document.write("Valor do Aumento: R$ " + aumento);
+                document.write("<br>");
+                document.write("Novo salário, após o aumento: R$ " + salarioatualizado);
+            }
+        
+        
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora em Vue.js</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- CRIAÇÃO OBJETO COMPONENTE CALCULDADORA - INICIO -->
+  <div id="app">
+    <div class="calculator">
+	  <!-- CRIAÇÃO VISOR DE RESULTADO - INICIO --> 
+      <textarea type="text " class="screen" v-model="screenValue" name="txt" readonly></textarea>
+	  <!-- CRIAÇÃO VISOR DE RESULTADO - FIM --> 
+      <!-- CRIAÇÃO DA LOGO VUE - INICIO --> 
+	  <div class="logo"></div>
+      <!-- CRIAÇÃO DA LOGO VUE - FIM --> 	  
+      
+	  <!-- CRIAÇÃO DA CALCULADORA - INICIO --> 
+	  <span 
+        class="key" 
+        v-for="(input, index) of inputValues" 
+        v-bind:class="index == 0 || index == 17 || (index + 3) % 4 == 0 
+                ? index == 0
+                  ? 'operator wide'
+                  : 'operator'
+                : ''"
+
+	   v-on:click="index == 0 ? clearScreen()
+                    : index == 17 ? displayResult()
+                    : (index + 3) % 4 == 0 && index != 17 ? inputOperator(input)
+                    : inputNumber(input)"
+      >
+	 
+     
+     <!-- EXIBIÇÃO RESULTADO --> 
+	 {{ input }}
+	 
+		
+      </span>
+	  <!-- CRIAÇÃO DA CALCULADORA - FIM --> 
+	  
+    </div>
+  </div>
+  <!-- CRIAÇÃO OBJETO COMPONENTE CALCULDADORA - FIM -->
+  
+  <script src="https://unpkg.com/mathjs@7.5.1/dist/math.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="script.js"></script>
+</body>
+</html>

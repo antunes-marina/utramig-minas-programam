@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "ZCOOL QingKe HuangYou", sans-serif;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 320px;
+  height: 560px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator .screen {
+  grid-column: span 4;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+
+  border-radius: 10px;
+  background: #35495e;
+  color: #fff;
+
+  font-size: 3em;
+  text-align: right;
+  resize: none;
+  font-family: "ZCOOL QingKe HuangYou", sans-serif;
+}
+
+.calculator .logo {
+  margin: 4px;
+
+  background: url("https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg")
+    no-repeat center;
+  background-size: 70%;
+}
+
+.calculator .key {
+  border-radius: 10px;
+  margin: 4px;
+
+  cursor: pointer;
+  background: #42b883;
+  color: #fff;
+  box-shadow: 2px 2px 4px #215c41;
+
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: transform 0.1s, background-color 0.1s;
+}
+
+.calculator .key:hover {
+  background: #184430;
+}
+
+.calculator .key:active {
+  transform: translate(2px, 2px);
+}
+
+.calculator .operator {
+  background: #276b4c;
+}
+
+.calculator .wide {
+  grid-column: span 2;
+}

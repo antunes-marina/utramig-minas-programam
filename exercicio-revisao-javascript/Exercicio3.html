@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> Tabela de operações </title>
+        <meta charset = "utf-8">
+    </head>
+
+    <body>
+        <script type = "text/javascript">
+        
+        alert("Digite dois números: ");
+        var a = parseFloat(prompt("Digite o primeiro número: "));
+        var b = parseFloat(prompt("Digite o segundo número: "));
+
+        var soma = a + b;
+        var multip = a * b;
+        var divis = a / b;
+        var subtr = a - b;
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("<table border='1' align=center> ");
+        document.write("<tr>");
+        document.write("<th width='100'> Operação </th>");
+        document.write("<th width='100'> Valor </th>");
+        document.write("</tr>");
+        
+        document.write("<tr>");
+        document.write("<td width='100' align=center>");
+        document.write(a + " + " + b);
+        document.write("</td>");
+        document.write("<td width='100' align=center>");
+        document.write(soma);
+        document.write("</td>");
+        document.write("</tr>");
+
+        document.write("<tr>");
+        document.write("<td width='100' align=center>");
+        document.write(a + " * " + b);
+        document.write("</td>");
+        document.write("<td width='100' align=center>");
+        document.write(multip);
+        document.write("</td>");
+        document.write("</tr>");
+
+        document.write("<tr>");
+        document.write("<td width='100' align=center>");
+        document.write(a + " / " + b);
+        document.write("</td>");
+        document.write("<td width='100' align=center>");
+        document.write(divis);
+        document.write("</td>");
+        document.write("</tr>");
+
+        document.write("<tr>");
+        document.write("<td width='100' align=center>");
+        document.write(a + " - " + b);
+        document.write("</td>");
+        document.write("<td width='100' align=center>");
+        document.write(subtr);
+        document.write("</td>");
+        document.write("</tr>");
+
+        document.write("</table> ");
+        
+        </script>
+    
+    </body>
+</html>
+
